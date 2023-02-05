@@ -1,0 +1,14 @@
+{
+  "name": "toner_ekspres",
+  "version": "1.0.0",
+  "description": "Photocopiershop site",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Ana Djurovic",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}
