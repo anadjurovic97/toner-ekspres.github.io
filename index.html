@@ -112,43 +112,47 @@
 
     <h2>Tvrdi povez</h2>
 
-    <form>
+    <form 
+    name="form" method="POST" data-netlify="true" onSubmit="submit"
+    data-netlify-honeypot="bot-filed" action="/success.html"
+    >
 
+    <input style="display: none" name="bot-filed">
     <div class="upload">
 
     <div class="upload__column1">
 
       <label>Ime i prezime</label>
-      <input value="Ana Djurovic" id="name" type="text" name="name" />
+      <input value="" id="name" type="text" name="ime i prezime" required />
       <label>Broj telefona</label>
-      <input value="062323799" id="phone" type="text" name="number" />
+      <input value="" id="phone" type="text" name="broj telefona" required />
       <label>Email</label>
-      <input value="anadjurovic129@gmail.com" id="email" type="text" name="email" />
+      <input value="" id="email" type="text" name="email" required/>
       <h4>Količina</h4>
       <label>Crno-belo</label>
-      <input value="35" id="black" type="number" name="black" />
+      <input value="" id="black" type="number" name="crno-belo" />
       <label>Kolor</label>
-      <input value="10" id="color" type="number" name="color" />
+      <input value="" id="color" type="number" name="u boji" />
     </div>
 
     <div class="upload__column2">      
 
       <label>Boja korica</label>
-      <select name="cover">
+      <select name="boja korica" required>
         <option style="display: none">Izaberi boju:</option>
         <option>crvena</option>
         <option>plava</option>
         <option>crna</option>
       </select>
       <label>Boja slova</label>
-      <select name="gold">
+      <select name="boja slova" required>
         <option style="display: none">Izaberi boju:</option>
         <option>zlatna</option>
         <option>srebrna</option>
       </select>
       <label>Pismo</label>
-      <select name="letter">
-        <option style="display: none">Izaberi boju:</option>
+      <select name="pismo" required>
+        <option style="display: none">Izaberi pismo:</option>
         <option>ćirilica</option>
         <option>latinica</option>
       </select>
