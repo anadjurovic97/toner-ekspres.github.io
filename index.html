@@ -111,50 +111,53 @@
       <p>Ovim nalogom potvrđujem ispravnost podataka na prvoj
         (naslovnoj) stranici, koja se utiskuje u korice tvrdog
         poveza.</p>
-        -->
+        
         <div class="overlay hidden" ></div>
-
+-->
 <div class="add-form-window hidden">
   <!--   <button class="btn--close-modal">&times;</button> -->
 
     <h2 class="upload__heading">Tvrdi povez</h2>
 
-  <form class="upload">
+  <form
+  class="upload" name = "form" data-netlify = "true" upload = "upload" onsubmit="submit">
+
+     
 
     <div class="upload__column1">
 
 
       <label>Ime i prezime</label>
-      <input value="Ana Djurovic" id="name" type="text" />
+      <input value="Ana Djurovic" id="name" type="text" name="name" />
       <label>Broj telefona</label>
-      <input value="062323799" id="phone" type="text" />
+      <input value="062323799" id="phone" type="text" name="number" />
       <label>Email</label>
-      <input value="anadjurovic129@gmail.com" id="email" type="text"/>
+      <input value="anadjurovic129@gmail.com" id="email" type="text" name="email" />
       <h4>Količina</h4>
       <label>Crno-belo</label>
-      <input value="35" id="black" type="number" />
+      <input value="35" id="black" type="number" name="black" />
       <label>Kolor</label>
-      <input value="10" id="color" type="number" />
+      <input value="10" id="color" type="number" name="color" />
     </div>
 
     <div class="upload__column2">      
 
 
       <label>Boja korica</label>
-      <select>
+      <select name="cover">
         <option style="display: none">Izaberi boju:</option>
         <option>crvena</option>
         <option>plava</option>
         <option>crna</option>
       </select>
       <label>Boja slova</label>
-      <select>
+      <select name="gold">
         <option style="display: none">Izaberi boju:</option>
         <option>zlatna</option>
         <option>srebrna</option>
       </select>
       <label>Pismo</label>
-      <select>
+      <select name="letter">
         <option style="display: none">Izaberi boju:</option>
         <option>ćirilica</option>
         <option>latinica</option>
@@ -169,7 +172,7 @@
 <label for="actual-btn"></label>
 
 <div class="buttons">
-<button id="upload">Pošalji</button>
+<button type="submit" id="upload">Pošalji</button>
 <button id="close">Zatvori</button>
 </div>
 
@@ -211,6 +214,12 @@
     </div>
 </div>
 </div>
+<!--Footer section-->
+<div class="footer">
+    <span>Copyright © 2023. TONER EKSPRES - All rights reserved.</span>
+</div>
+
+    <script src="app.js"></script>
 
 <script src="app.js"></script>
 

@@ -1,6 +1,6 @@
 .contact_container {
   background: rgb(54, 50, 50);
-  padding: 130px 40px;
+  padding: 120px 40px;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
@@ -40,6 +40,15 @@
 
 .contact_info {
   margin-top: 85px;
+}
+
+.footer {
+  background: linear-gradient(to right, rgb(54, 50, 50), #979899);
+  color: whitesmoke;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
