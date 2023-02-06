@@ -8,6 +8,7 @@
 
     <title>Toner Ekspres</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="img/orange-copier.png">
 
 
 
@@ -92,7 +93,7 @@
     </div>
 <!--Form section-->
 <div class="form" id="tvrdi-povez">
-    <button class="btn-three" id="open"><strong>FORMULAR ZA TVRDI POVEZ</strong></button>
+    <button class="btn-form" id="open"><strong>FORMULAR ZA TVRDI POVEZ</strong></button>
 <div class="remark">
     <h3><strong>NAPOMENA:</strong></h3>  
     &middot; Rad je potrebno snimiti u PDF formatu, A4 formata uspravne
@@ -105,27 +106,17 @@
             &middot; Tuđe gramatičke greške ne ispravljamo!
 </div>
 
+
 <div class="modal-container" id="modal_container">
-    <div class="modal">
-     <!--   <h1>Formular za tvrdi povez🍊</h1>
-      <p>Ovim nalogom potvrđujem ispravnost podataka na prvoj
-        (naslovnoj) stranici, koja se utiskuje u korice tvrdog
-        poveza.</p>
-        
-        <div class="overlay hidden" ></div>
--->
-<div class="add-form-window hidden">
-  <!--   <button class="btn--close-modal">&times;</button> -->
+<div class="add-form-window hidden"> 
 
-    <h2 class="upload__heading">Tvrdi povez</h2>
+    <h2>Tvrdi povez</h2>
 
-  <form
-  class="upload" name = "form" data-netlify = "true" upload = "upload" onsubmit="submit">
+    <form>
 
-     
+    <div class="upload">
 
     <div class="upload__column1">
-
 
       <label>Ime i prezime</label>
       <input value="Ana Djurovic" id="name" type="text" name="name" />
@@ -141,7 +132,6 @@
     </div>
 
     <div class="upload__column2">      
-
 
       <label>Boja korica</label>
       <select name="cover">
@@ -165,8 +155,8 @@
 
 
 </div>
-</form>
 
+</div>
 
 <input type="file" id="actual-btn"/>
 <label for="actual-btn"></label>
@@ -176,10 +166,12 @@
 <button id="close">Zatvori</button>
 </div>
 
-</div>
-</div>
+</form>
+
+
 </div>
 
+</div>
 
 </div>
     

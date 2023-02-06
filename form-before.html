@@ -1,0 +1,98 @@
+<!--Form section-->
+<div class="form" id="tvrdi-povez">
+  <button class="btn-three" id="open">
+    <strong>FORMULAR ZA TVRDI POVEZ</strong>
+  </button>
+  <div class="remark">
+    <h3><strong>NAPOMENA:</strong></h3>
+    &middot; Rad je potrebno snimiti u PDF formatu, A4 formata uspravne
+    (portret) orijentacije. <br />
+    <br />
+    &middot; Ukoliko je dokument u Word-u, potrebno je prilagoditi margine.
+    <br />
+    Ako su margine Custom, format Letter ne odgovaramo za pomeranja u prelomu
+    teksta u štampi. <br />
+    <br />
+    &middot; Maksimalan broj listova 80g papira koji je moguće ukoričiti je 150.
+    <br />
+    <br />
+    &middot; Rad je potrebno pregledati i proveriti u konačnoj verziji za
+    štampu. <br />
+    <br />
+    &middot; Tuđe gramatičke greške ne ispravljamo!
+  </div>
+
+  <div class="modal-container" id="modal_container">
+    <div class="modal">
+      <!--   <h1>Formular za tvrdi povez🍊</h1>
+      <p>Ovim nalogom potvrđujem ispravnost podataka na prvoj
+        (naslovnoj) stranici, koja se utiskuje u korice tvrdog
+        poveza.</p>
+        
+        <div class="overlay hidden" ></div>
+-->
+      <div
+        class="add-form-window hidden"
+        name="form"
+        method="POST"
+        data-netlify="true"
+        onSubmit="submit"
+      >
+        <!--   <button class="btn--close-modal">&times;</button> -->
+
+        <h2 class="upload__heading">Tvrdi povez</h2>
+
+        <form class="upload">
+          <div class="upload__column1">
+            <label>Ime i prezime</label>
+            <input value="Ana Djurovic" id="name" type="text" name="name" />
+            <label>Broj telefona</label>
+            <input value="062323799" id="phone" type="text" name="number" />
+            <label>Email</label>
+            <input
+              value="anadjurovic129@gmail.com"
+              id="email"
+              type="text"
+              name="email"
+            />
+            <h4>Količina</h4>
+            <label>Crno-belo</label>
+            <input value="35" id="black" type="number" name="black" />
+            <label>Kolor</label>
+            <input value="10" id="color" type="number" name="color" />
+          </div>
+
+          <div class="upload__column2">
+            <label>Boja korica</label>
+            <select name="cover">
+              <option style="display: none">Izaberi boju:</option>
+              <option>crvena</option>
+              <option>plava</option>
+              <option>crna</option>
+            </select>
+            <label>Boja slova</label>
+            <select name="gold">
+              <option style="display: none">Izaberi boju:</option>
+              <option>zlatna</option>
+              <option>srebrna</option>
+            </select>
+            <label>Pismo</label>
+            <select name="letter">
+              <option style="display: none">Izaberi boju:</option>
+              <option>ćirilica</option>
+              <option>latinica</option>
+            </select>
+          </div>
+        </form>
+
+        <input type="file" id="actual-btn" />
+        <label for="actual-btn"></label>
+
+        <div class="buttons">
+          <button type="submit" id="upload">Pošalji</button>
+          <button id="close">Zatvori</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

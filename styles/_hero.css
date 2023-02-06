@@ -1,8 +1,8 @@
 .hero {
   background: linear-gradient(to right, rgb(54, 50, 50), #979899);
   /*  padding: 130px 40px; */
-  padding-top: 225px;
-  padding-bottom: 100px;
+  padding-top: 150px;
+  padding-bottom: 175px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100%;
@@ -19,6 +19,11 @@
 .hero_heading span {
   color: #ff512f;
   -webkit-text-stroke: 2px #f09819;
+}
+
+.hero_container {
+  margin-right: 150px;
+  text-align: justify;
 }
 
 .hero_description {
@@ -40,7 +45,7 @@
 
 .hero_img {
   padding: 40px 0;
-  margin-right: 20px;
+  margin-left: 120px;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,0 +1,30 @@
+body {
+  background: #485563; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #29323c,
+    #485563
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #29323c, #485563);
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  height: 100vh;
+}
+
+.success-message {
+  border-radius: 10px;
+  background-color: #eef2f3;
+  padding: 10px;
+  color: black;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-top: 40vh;
+  box-shadow: 10px 10px 20px #1d232b;
+}
+
+.home-message a {
+  color: #1e758d;
+  font-size: 20px;
+}
