@@ -1,7 +1,7 @@
+// Mobile Menu
+
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar_menu");
-
-//Display Mobile Menu
 
 function mobileMenu() {
   menu.classList.toggle("is-active");
@@ -9,6 +9,17 @@ function mobileMenu() {
 }
 
 menu.addEventListener("click", mobileMenu);
+
+const hideMobileMenu = () => {
+  const menuBars = document.querySelector(".is-active");
+  if (window.innerWidth <= 768 && menuBars) {
+    menu.classList.toggle("is-active");
+    menuLinks.classList.remove("active");
+  }
+};
+menuLinks.addEventListener("click", hideMobileMenu);
+
+// Form
 
 const open = document.getElementById("open");
 const modal_container = document.getElementById("modal_container");
