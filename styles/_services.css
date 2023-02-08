@@ -74,19 +74,35 @@
   margin-bottom: 0px;
 }
 
-@media screen and (max-width: 768px) and (max-width: 1020px) {
+@media screen and (max-width: 768px) and (max-width: 1080px) {
   .services_wrapper {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
   }
 
-  .services_card {
-    transition: none;
-  }
-
   .services_card:hover {
     transform: none;
     transition: none;
+  }
+
+  .services_card p {
+    font-size: 15px;
+  }
+
+  .services_card {
+    height: 350px;
+    width: 300px;
+    transition: none;
+  }
+
+  .services_img {
+    margin-top: -100px;
+  }
+
+  .services_img_4 {
+    padding-top: -50px;
+    margin-top: -250px;
+    margin-bottom: -25px;
   }
 }
