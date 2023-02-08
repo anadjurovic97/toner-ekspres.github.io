@@ -76,7 +76,7 @@
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
   .hero {
     display: grid;
     grid-template-rows: 1fr;
@@ -97,6 +97,7 @@
     width: 350px;
     /* margin-right: 0px; */
     background: rgb(54, 50, 50);
+    padding: 35px;
     /* margin-left: 15px; 
     padding: 25px; */
   }

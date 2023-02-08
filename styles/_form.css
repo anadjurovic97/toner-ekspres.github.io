@@ -311,7 +311,7 @@ h4 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1080px) {
+@media screen and (min-width: 768px) and (max-width: 1020px) {
   .modal-container {
     width: 350px;
     padding: 0;
