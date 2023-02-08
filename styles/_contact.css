@@ -45,9 +45,16 @@
   }
 
   .contact_container {
-    display: grid;
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
+  }
+
+  .contact_container h2 {
+    margin: 10px 0;
+  }
+
+  .contact_info {
+    padding: 0 35px 0 35px;
   }
 }
